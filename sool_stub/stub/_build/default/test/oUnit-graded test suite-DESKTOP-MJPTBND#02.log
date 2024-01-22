@@ -1,0 +1,21 @@
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#02 I: Start test graded test suite:1:create-class-with-field-and-method.
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#02 I: Test graded test suite:1:create-class-with-field-and-method is successful.
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#02 I: End test graded test suite:1:create-class-with-field-and-method.
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#02 I: Start test graded test suite:5:send-msg1.
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#02 E: Test graded test suite:5:send-msg1 has failed.
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#02 E: send-msg1 failed, -0 point(s)
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#02 E: expected: Ok (ListVal (NumVal 44,NumVal 33))
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#02 E: but got: Error (Expected an object!) in test graded test suite:5:send-msg1.
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#02 E: Raised at file "src/oUnitAssert.ml", line 45, characters 2-27
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#02 E: Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#02 E: 
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#02 I: End test graded test suite:5:send-msg1.
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#02 I: Start test graded test suite:8:sharedf-counter.
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#02 E: Test graded test suite:8:sharedf-counter has failed.
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#02 E: sharedf-counter failed, -0 point(s)
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#02 E: expected: Ok (ListVal (ListVal (NumVal 1,NumVal 3),ListVal (NumVal 2,NumVal 3)))
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#02 E: but got: Error (Expected an object!) in test graded test suite:8:sharedf-counter.
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#02 E: Raised at file "src/oUnitAssert.ml", line 45, characters 2-27
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#02 E: Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#02 E: 
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#02 I: End test graded test suite:8:sharedf-counter.

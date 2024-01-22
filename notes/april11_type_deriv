@@ -1,0 +1,30 @@
+Construct a typing derivation for the typing judgement:
+
+{}|- letrec f(x:int):int = if zero?(x) then 1 else x*(f(x-1)) in zero?((f 5)) : bool
+
+
+                                [TYPING DERIVATION]
+------------------------------------------------------------------------------------???
+{}|- letrec f(x:int):int = if zero?(x) then 1 else x*(f(x-1)) in zero?((f 5)) : bool
+
+
+
+
+                                                                                            -----------TVar     --------------TConst
+                                                                                            \Gamma|-x:int       \Gamma|-1:int 
+                                                                    -------------TVar       -------------TSub
+                                                                    \Gamma|-f:int->int       \Gamma|-x-1:int
+-----------------TVar                           --------------TVar  ------------------------TApp
+\Gamma|- x:int                                  \Gamma|-x:int   \Gamma|-(f(x-1)):int
+---------------------TIsZero    --------TConst  -------------------------TMul
+\Gamma|- zero?(x):bool          \Gamma|-1:Int   \Gamma|-x*(f(x-1)):int
+------------------------------------------------------------
+\Gamma|-zero?(x):bool \Gamma|- 1:int \Gamma|-x*(f(x-1)):int
+-----------------------------------------------------------ITE
+{f-int->int,x;int}|- if zero?(x) then 1 else x*(f(x-1)):int          {f:int -> int}|- in zero?((f 5)) : bool
+-------------------------------------------------------------------------------------TLetrec
+{}|- letrec f(x:int):int = if zero?(x) then 1 else x*(f(x-1)) in zero?((f 5)) : bool
+
+
+-------------------------TVar    --------------TConst
+{f:int->int}|- f:int->int       

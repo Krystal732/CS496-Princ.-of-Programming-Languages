@@ -1,0 +1,114 @@
+# dune runtest
+# OCAMLPARAM: unset
+$ /usr/bin/nproc > /tmp/duneafc036.output 2> /dev/null
+$ /usr/bin/ocamlc.opt -config > /tmp/dune2c63e6.output
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl test/test.ml) > _build/default/test/.test.eobjs/test.ml.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl test/test_lib.ml) > _build/default/test/.test.eobjs/test_lib.ml.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl src/interp.ml) > _build/default/src/.sool.objs/interp.ml.d
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -g -I src/.sool.objs -I src/.sool.objs/.private -intf-suffix .ml-gen -no-alias-deps -opaque -o src/.sool.objs/sool.cmx -c -impl src/sool.ml-gen)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -I src/.sool.objs -I src/.sool.objs/.private -intf-suffix .ml -no-alias-deps -opaque -open Sool -o src/.sool.objs/sool__Ast.cmx -c -impl src/ast.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -I src/.sool.objs -I src/.sool.objs/.private -intf-suffix .ml -no-alias-deps -opaque -open Sool -o src/.sool.objs/sool__Ds.cmx -c -impl src/ds.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -I src/.sool.objs -I src/.sool.objs/.private -intf-suffix .ml -no-alias-deps -opaque -open Sool -o src/.sool.objs/sool__Lexer.cmx -c -impl src/lexer.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -I src/.sool.objs -I src/.sool.objs/.private -intf-suffix .ml -no-alias-deps -opaque -open Sool -o src/.sool.objs/sool__Store.cmx -c -impl src/store.ml)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I src/.sool.objs -I src/.sool.objs/.private -no-alias-deps -opaque -open Sool -o src/.sool.objs/sool__Interp.cmo -c -impl src/interp.ml)
+> File "src/interp.ml", line 81, characters 4-5:
+> Warning 11: this match case is unused.
+> File "src/interp.ml", line 126, characters 34-38:
+> Warning 11: this match case is unused.
+> File "src/interp.ml", line 131, characters 4-8:
+> Warning 11: this match case is unused.
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I test/.test.eobjs -I /home/krystal/.opam/system/lib/bytes -I /home/krystal/.opam/system/lib/oUnit -I src/.sool.objs -no-alias-deps -opaque -o test/.test.eobjs/test_lib.cmo -c -impl test/test_lib.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -I src/.sool.objs -I src/.sool.objs/.private -intf-suffix .ml -no-alias-deps -opaque -open Sool -o src/.sool.objs/sool__Interp.cmx -c -impl src/interp.ml)
+> File "src/interp.ml", line 81, characters 4-5:
+> Warning 11: this match case is unused.
+> File "src/interp.ml", line 126, characters 34-38:
+> Warning 11: this match case is unused.
+> File "src/interp.ml", line 131, characters 4-8:
+> Warning 11: this match case is unused.
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I test/.test.eobjs -I /home/krystal/.opam/system/lib/bytes -I /home/krystal/.opam/system/lib/oUnit -I src/.sool.objs -no-alias-deps -opaque -o test/.test.eobjs/test.cmo -c -impl test/test.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -I test/.test.eobjs -I /home/krystal/.opam/system/lib/bytes -I /home/krystal/.opam/system/lib/oUnit -I src/.sool.objs -intf-suffix .ml -no-alias-deps -opaque -o test/.test.eobjs/test_lib.cmx -c -impl test/test_lib.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -I src/.sool.objs -I src/.sool.objs/.private -intf-suffix .ml -no-alias-deps -opaque -open Sool -o src/.sool.objs/sool__Parser.cmx -c -impl src/parser.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -I test/.test.eobjs -I /home/krystal/.opam/system/lib/bytes -I /home/krystal/.opam/system/lib/oUnit -I src/.sool.objs -intf-suffix .ml -no-alias-deps -opaque -o test/.test.eobjs/test.cmx -c -impl test/test.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -a -o src/sool.cmxa src/.sool.objs/sool.cmx src/.sool.objs/sool__Ast.cmx src/.sool.objs/sool__Ds.cmx src/.sool.objs/sool__Store.cmx src/.sool.objs/sool__Parser.cmx src/.sool.objs/sool__Lexer.cmx src/.sool.objs/sool__Interp.cmx)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -o test/test.exe -I /home/krystal/.opam/system/lib/bytes -I /home/krystal/.opam/system/lib/oUnit -I src /usr/lib/ocaml/unix.cmxa /home/krystal/.opam/system/lib/oUnit/oUnitAdvanced.cmxa /home/krystal/.opam/system/lib/oUnit/oUnit.cmxa src/sool.cmxa test/.test.eobjs/test_lib.cmx test/.test.eobjs/test.cmx)
+$ (cd _build/default/test && ./test.exe)
+> ...FFFFFF
+> ==============================================================================
+> Error: graded test suite:8:sharedf-counter.
+>
+> File "/mnt/c/krystal/496/sool_stub/stub/_build/default/test/oUnit-graded test suite-DESKTOP-MJPTBND#02.log", line 14, characters 1-1:
+> Error: graded test suite:8:sharedf-counter (in the log).
+>
+> Raised at file "src/oUnitAssert.ml", line 45, characters 2-27
+> Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+>
+> sharedf-counter failed, -0 point(s)
+> expected: Ok (ListVal (ListVal (NumVal 1,NumVal 3),ListVal (NumVal 2,NumVal 3)))
+> but got: Error (Expected an object!)
+> ------------------------------------------------------------------------------
+> ==============================================================================
+> Error: graded test suite:7:counter-1.
+>
+> File "/mnt/c/krystal/496/sool_stub/stub/_build/default/test/oUnit-graded test suite-DESKTOP-MJPTBND#01.log", line 13, characters 1-1:
+> Error: graded test suite:7:counter-1 (in the log).
+>
+> Raised at file "src/oUnitAssert.ml", line 45, characters 2-27
+> Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+>
+> counter-1 failed, -0 point(s)
+> expected: Ok (ListVal (NumVal 0,NumVal 1))
+> but got: Error (Expected an object!)
+> ------------------------------------------------------------------------------
+> ==============================================================================
+> Error: graded test suite:6:self1.
+>
+> File "/mnt/c/krystal/496/sool_stub/stub/_build/default/test/oUnit-graded test suite-DESKTOP-MJPTBND#03.log", line 5, characters 1-1:
+> Error: graded test suite:6:self1 (in the log).
+>
+> Raised at file "src/oUnitAssert.ml", line 45, characters 2-27
+> Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+>
+> self1 failed, -0 point(s)
+> expected: Ok (ListVal (NumVal 11,NumVal 13))
+> but got: Error (Expected an object!)
+> ------------------------------------------------------------------------------
+> ==============================================================================
+> Error: graded test suite:5:send-msg1.
+>
+> File "/mnt/c/krystal/496/sool_stub/stub/_build/default/test/oUnit-graded test suite-DESKTOP-MJPTBND#02.log", line 5, characters 1-1:
+> Error: graded test suite:5:send-msg1 (in the log).
+>
+> Raised at file "src/oUnitAssert.ml", line 45, characters 2-27
+> Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+>
+> send-msg1 failed, -0 point(s)
+> expected: Ok (ListVal (NumVal 44,NumVal 33))
+> but got: Error (Expected an object!)
+> ------------------------------------------------------------------------------
+> ==============================================================================
+> Error: graded test suite:3:simple1.
+>
+> File "/mnt/c/krystal/496/sool_stub/stub/_build/default/test/oUnit-graded test suite-DESKTOP-MJPTBND#04.log", line 2, characters 1-1:
+> Error: graded test suite:3:simple1 (in the log).
+>
+> Raised at file "src/oUnitAssert.ml", line 45, characters 2-27
+> Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+>
+> simple1 failed, -0 point(s)
+> expected: Ok (NumVal 44) but got: Error (Expected an object!)
+> ------------------------------------------------------------------------------
+> ==============================================================================
+> Error: graded test suite:4:field_and_param_scope1.
+>
+> File "/mnt/c/krystal/496/sool_stub/stub/_build/default/test/oUnit-graded test suite-DESKTOP-MJPTBND#01.log", line 5, characters 1-1:
+> Error: graded test suite:4:field_and_param_scope1 (in the log).
+>
+> Raised at file "src/oUnitAssert.ml", line 45, characters 2-27
+> Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+>
+> field_and_param_scope1 failed, -0 point(s)
+> expected: Ok (NumVal 25) but got: Error ( _super  not found!)
+> ------------------------------------------------------------------------------
+> Ran: 9 tests in: 0.17 seconds.
+> FAILED: Cases: 9 Tried: 9 Errors: 0 Failures: 6 Skip:  0 Todo: 0 Timeouts: 0.
+[1]

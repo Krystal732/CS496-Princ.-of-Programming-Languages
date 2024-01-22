@@ -1,0 +1,111 @@
+Depict the enviorment and store when evaluation reaches the breakpoint 
+a) assuming call-by-reference
+b) assuming call-by-value (implicit refs)
+
+let a=1
+in let b=2
+in let f =proc(x) { proc (d) { debug(set x=x+d) }}
+in ((f a) (b+1)) 
+
+a)
+Environment:
+a -> RefVal 0
+b -> RefVal 1
+x -> RefVal 0
+d -> RefVal 3
+
+>>Store:
+0->NumVal 1,
+1->NumVal 2,
+2->ProcVal (x,Proc(d,Debug(Set(x,Add(Var x,Var d)))),(b,RefVal (1))(a,RefVal (0)))
+3->NumVal 3
+
+b)
+Environment:
+a -> RefVal 0
+b -> RefVal 1
+x -> RefVal 3
+d -> RefVal 4
+
+>>Store:
+0 -> NumVal 1
+1 -> NumVal 2
+2 -> ProcVal("x", ... ,...)
+3 -> NumVal 1
+4 -> NumVal 3
+
+
+interp "
+let a = 2
+in let b =3
+in begin
+    set a = b;
+    debug ( a )
+end";;
+
+interp "
+let a = 2
+in let b = a
+in begin
+    set b = 3;
+    debug ( a )
+end";;
+
+interp "
+let a = 2
+in let b = proc ( x ) {
+begin
+    set a = x;
+    debug ( a )
+end
+}
+in ( b 3)";;
+
+interp "
+let a = 2
+in let b = proc ( x ) {
+begin
+    set a = x;
+    a
+end
+}
+in ( b 3) + debug (( b 4))";;
+
+
+interp "let a=7
+in let f=proc (x) { proc (y) { proc (z) {
+begin
+    debug(set x = y-z);
+    x
+end } } }
+in let b=a
+in (((f b) (a-1)) (a+1))";;
+
+
+CALL BY NAME VS NEED
+interp "
+let a=0
+in let f = proc (x){
+    begin
+        set a = a+1;
+        a
+        end}
+in let g = proc (y) {y+y+y+y}
+in (g (f 2))";;
+
+interp "
+letrec f(x) = if zero?(x) 
+    then 1
+    else x*(f(x-1))
+in let g=proc(y){y+y+y+y+y}
+in (g(f 5))";;
+
+
+interp "let a=7
+in let f=proc (x) { proc (y) { proc (z) {
+begin
+    (set x = 3);
+    x
+end } } }
+in let b=a
+in (((f b) (a-1)) debug(a+1))";;

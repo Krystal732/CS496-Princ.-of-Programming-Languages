@@ -1,0 +1,79 @@
+EVALUATING EXPRESSIONS
+
+explicit refs
+let f = 
+    let counter = newref(0)
+    in proc (d) {
+        begin   
+            setref (counter, deref(counter) + d);
+            deref(counter)
+        end
+    }
+in (f 1) - (f 1) 
+**Ok (NumVal(-1))**
+(1-2=-1)
+only the proc gets run when calling f 
+
+
+Implicit refs w/ call by reference
+let a = 3
+in let f = proc(x){
+                proc(y){
+                    begin   
+                        debug(set a =a+x);
+                        set a =a+x;
+                        a
+                    end
+                }
+}
+in ((f (a+a)) (a+a))
+**Ok (NumVal 15)**
+notice how a+a is arithmatic so needs own store and dont point to refval 0 (a)
+
+
+TYPE DERIVATION TREE
+
+prove tht the following expression is tyable in CHECKED by exhibiting a typing derivation:
+let f = proc (x:int){ proc (y:int){ if zero?(x-2) then 0 else y}} in (f 3)
+(give yourself short cut on side like gamma, gamma')
+
+
+CHECKED EXPRESSION DERIVATION
+give expressions in the language CHECKED that have the following types:
+
+1. bool->int
+proc(x:bool){0}
+2. (int->int)->int
+proc(x:i->i){0}
+3. i->(i->b->i)->b
+proc(x:i){ proc(y: i-> b -> i) {zero?(1) }}
+4. i->(i->i)
+proc(x:i){proc(y:i){0}}         
+
+
+    chk "proc(x:i->i){0}";;         (i->i)->i
+    proc(x:i){proc(y:i){0}}         i->(i->i)
+
+
+
+CHECKED CODING
+| Left(e, t2) ->
+    chk_expr e >>= fun t1 ->
+    return (UnionType(t1, t2))
+| Case(e, idL, eL, idR, eR) ->
+    chk_expr e >>= 
+    pair_of_uniontype "case" >>= fun(t1, t2) ->
+    extend_tenv idL t1 >>+
+    chk_expr eL >>= fun tLeft ->
+    extend_tenv idR t1 >>+
+    chk_expr eL >>= fun tRight ->
+    if tLeft=tRight
+    then return tRight
+    else error "case: branches must have same type"
+
+
+(dst pair_of_uniontype)
+
+
+
+

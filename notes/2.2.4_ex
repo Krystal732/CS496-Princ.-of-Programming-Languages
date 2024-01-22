@@ -1,0 +1,14 @@
+main pdf 2.2.4
+
+
+\Gamma|- e1:t1  \Gamma|- e2:t2
+------------------------------------TPair
+\Gamma|- pair(e1,e2): t1:t2
+
+
+
+\Gamma|-e1: t1*t2    \Gamma, id1:t1, id2:t2  |- e2:t
+------------------------------------------------------------TUnpair
+\Gamma|- unpair (id1, id2)=e1 in e2: ???
+
+

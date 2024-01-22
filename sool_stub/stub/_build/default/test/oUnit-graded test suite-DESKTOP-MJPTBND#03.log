@@ -1,0 +1,12 @@
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#03 I: Start test graded test suite:2:create-object.
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#03 I: Test graded test suite:2:create-object is successful.
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#03 I: End test graded test suite:2:create-object.
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#03 I: Start test graded test suite:6:self1.
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#03 E: Test graded test suite:6:self1 has failed.
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#03 E: self1 failed, -0 point(s)
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#03 E: expected: Ok (ListVal (NumVal 11,NumVal 13))
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#03 E: but got: Error (Expected an object!) in test graded test suite:6:self1.
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#03 E: Raised at file "src/oUnitAssert.ml", line 45, characters 2-27
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#03 E: Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#03 E: 
+2022-05-08T04:56:08+00:00 DESKTOP-MJPTBND#03 I: End test graded test suite:6:self1.

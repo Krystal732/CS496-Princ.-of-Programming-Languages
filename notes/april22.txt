@@ -1,0 +1,17 @@
+interp "
+let a=1
+in let b=2
+in let swap = ???
+in begin 
+    ((swap a)b);
+    a
+    end";;
+
+
+
+??? = proc (x) { proc (y) { 
+        debug( let tmp = x in 
+        begin
+            set x=y
+            set y=temp
+        end) }}
