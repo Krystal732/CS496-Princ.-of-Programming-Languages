@@ -1,0 +1,18 @@
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#04 I: Start test suite:3:deref1.
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#04 I: Test suite:3:deref1 is successful.
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#04 I: End test suite:3:deref1.
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#04 I: Start test suite:9:unpair1 .
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#04 I: Test suite:9:unpair1  is successful.
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#04 I: End test suite:9:unpair1 .
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#04 I: Start test suite:12:emptylist .
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#04 I: Test suite:12:emptylist  is successful.
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#04 I: End test suite:12:emptylist .
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#04 I: Start test suite:17:hd_list_int .
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#04 I: Test suite:17:hd_list_int  is successful.
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#04 I: End test suite:17:hd_list_int .
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#04 I: Start test suite:20:null_tree .
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#04 I: Test suite:20:null_tree  is successful.
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#04 I: End test suite:20:null_tree .
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#04 I: Start test suite:24:get_rst .
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#04 I: Test suite:24:get_rst  is successful.
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#04 I: End test suite:24:get_rst .

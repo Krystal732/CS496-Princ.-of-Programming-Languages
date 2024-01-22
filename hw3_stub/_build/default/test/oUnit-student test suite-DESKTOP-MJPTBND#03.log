@@ -1,0 +1,22 @@
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#03 I: Start test student test suite:2:simple-arith-1.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#03 I: Test student test suite:2:simple-arith-1 is successful.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#03 I: End test student test suite:2:simple-arith-1.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#03 I: Start test student test suite:6:abs-pos.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#03 I: Test student test suite:6:abs-pos is successful.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#03 I: End test student test suite:6:abs-pos.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#03 I: Start test student test suite:10:cons-list.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#03 E: Test student test suite:10:cons-list has failed.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#03 E: cons-list failed, -0 point(s)
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#03 E: expected: Ok (ListVal) but got: Error (Failure("implement me")) in test student test suite:10:cons-list.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#03 E: Raised at file "src/oUnitAssert.ml", line 45, characters 2-27
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#03 E: Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#03 E: 
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#03 I: End test student test suite:10:cons-list.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#03 I: Start test student test suite:14:tl-list.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#03 E: Test student test suite:14:tl-list has failed.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#03 E: tl-list failed, -0 point(s)
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#03 E: expected: Ok (ListVal) but got: Error (Failure("implement me")) in test student test suite:14:tl-list.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#03 E: Raised at file "src/oUnitAssert.ml", line 45, characters 2-27
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#03 E: Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#03 E: 
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#03 I: End test student test suite:14:tl-list.

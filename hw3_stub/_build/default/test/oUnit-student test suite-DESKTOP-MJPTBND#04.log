@@ -1,0 +1,19 @@
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#04 I: Start test student test suite:3:divide-by-zero.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#04 I: Test student test suite:3:divide-by-zero is successful.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#04 I: End test student test suite:3:divide-by-zero.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#04 I: Start test student test suite:9:cons-singleton.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#04 E: Test student test suite:9:cons-singleton has failed.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#04 E: cons-singleton failed, -0 point(s)
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#04 E: expected: Ok (ListVal) but got: Error (Failure("implement me")) in test student test suite:9:cons-singleton.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#04 E: Raised at file "src/oUnitAssert.ml", line 45, characters 2-27
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#04 E: Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#04 E: 
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#04 I: End test student test suite:9:cons-singleton.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#04 I: Start test student test suite:13:tl-singleton.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#04 E: Test student test suite:13:tl-singleton has failed.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#04 E: tl-singleton failed, -0 point(s)
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#04 E: expected: Ok (ListVal) but got: Error (Failure("implement me")) in test student test suite:13:tl-singleton.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#04 E: Raised at file "src/oUnitAssert.ml", line 45, characters 2-27
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#04 E: Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#04 E: 
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#04 I: End test student test suite:13:tl-singleton.

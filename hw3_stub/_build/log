@@ -1,0 +1,255 @@
+# dune runtest
+# OCAMLPARAM: unset
+$ /usr/bin/nproc > /tmp/dunea56e1c.output 2> /dev/null
+$ /usr/bin/ocamlc.opt -config > /tmp/dune904919.output
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl src/interp.ml) > _build/default/src/.proc.objs/interp.ml.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl src/interp1.ml) > _build/default/src/.proc.objs/interp1.ml.d
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -g -bin-annot -I src/.proc.objs -I src/.proc.objs/.private -no-alias-deps -opaque -o src/.proc.objs/proc.cmo -c -impl src/proc.ml-gen)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -g -I src/.proc.objs -I src/.proc.objs/.private -intf-suffix .ml-gen -no-alias-deps -opaque -o src/.proc.objs/proc.cmx -c -impl src/proc.ml-gen)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I src/.proc.objs -I src/.proc.objs/.private -no-alias-deps -opaque -open Proc -o src/.proc.objs/proc__Ast.cmo -c -impl src/ast.ml)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I src/.proc.objs -I src/.proc.objs/.private -no-alias-deps -opaque -open Proc -o src/.proc.objs/proc__Parser.cmi -c -intf src/parser.mli)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -I src/.proc.objs -I src/.proc.objs/.private -intf-suffix .ml -no-alias-deps -opaque -open Proc -o src/.proc.objs/proc__Ast.cmx -c -impl src/ast.ml)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I src/.proc.objs -I src/.proc.objs/.private -no-alias-deps -opaque -open Proc -o src/.proc.objs/proc__Ds.cmo -c -impl src/ds.ml)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I src/.proc.objs -I src/.proc.objs/.private -no-alias-deps -opaque -open Proc -o src/.proc.objs/proc__Lexer.cmo -c -impl src/lexer.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -I src/.proc.objs -I src/.proc.objs/.private -intf-suffix .ml -no-alias-deps -opaque -open Proc -o src/.proc.objs/proc__Ds.cmx -c -impl src/ds.ml)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I src/.proc.objs -I src/.proc.objs/.private -no-alias-deps -opaque -open Proc -o src/.proc.objs/proc__Interp.cmo -c -impl src/interp.ml)
+> File "src/interp.ml", line 71, characters 9-11:
+> Warning 27: unused variable e1.
+> File "src/interp.ml", line 71, characters 13-15:
+> Warning 27: unused variable e2.
+> File "src/interp.ml", line 72, characters 6-10:
+> Warning 27: unused variable e1.
+> File "src/interp.ml", line 73, characters 6-10:
+> Warning 27: unused variable e1.
+> File "src/interp.ml", line 109, characters 9-13:
+> Warning 27: unused variable es.
+> File "src/interp.ml", line 110, characters 12-15:
+> Warning 27: unused variable ids.
+> File "src/interp.ml", line 110, characters 16-18:
+> Warning 27: unused variable e1.
+> File "src/interp.ml", line 110, characters 19-21:
+> Warning 27: unused variable e2.
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I src/.proc.objs -I src/.proc.objs/.private -no-alias-deps -opaque -open Proc -o src/.proc.objs/proc__Interp1.cmo -c -impl src/interp1.ml)
+> File "src/interp1.ml", line 71, characters 9-11:
+> Warning 27: unused variable e1.
+> File "src/interp1.ml", line 71, characters 13-15:
+> Warning 27: unused variable e2.
+> File "src/interp1.ml", line 72, characters 6-10:
+> Warning 27: unused variable e1.
+> File "src/interp1.ml", line 73, characters 6-10:
+> Warning 27: unused variable e1.
+> File "src/interp1.ml", line 74, characters 10-14:
+> Warning 27: unused variable fs.
+> File "src/interp1.ml", line 75, characters 9-10:
+> Warning 27: unused variable e.
+> File "src/interp1.ml", line 75, characters 11-13:
+> Warning 27: unused variable id.
+> File "src/interp1.ml", line 76, characters 9-13:
+> Warning 27: unused variable e1.
+> File "src/interp1.ml", line 79, characters 9-11:
+> Warning 27: unused variable e1.
+> File "src/interp1.ml", line 79, characters 12-15:
+> Warning 27: unused variable lte.
+> File "src/interp1.ml", line 79, characters 16-19:
+> Warning 27: unused variable rte.
+> File "src/interp1.ml", line 80, characters 10-16:
+> Warning 27: unused variable target.
+> File "src/interp1.ml", line 80, characters 17-26:
+> Warning 27: unused variable emptycase.
+> File "src/interp1.ml", line 80, characters 27-30:
+> Warning 27: unused variable id1.
+> File "src/interp1.ml", line 80, characters 31-34:
+> Warning 27: unused variable id2.
+> File "src/interp1.ml", line 80, characters 35-38:
+> Warning 27: unused variable id3.
+> File "src/interp1.ml", line 80, characters 39-47:
+> Warning 27: unused variable nodecase.
+> File "src/interp1.ml", line 81, characters 9-13:
+> Warning 27: unused variable es.
+> File "src/interp1.ml", line 82, characters 12-15:
+> Warning 27: unused variable ids.
+> File "src/interp1.ml", line 82, characters 16-18:
+> Warning 27: unused variable e1.
+> File "src/interp1.ml", line 82, characters 19-21:
+> Warning 27: unused variable e2.
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -I src/.proc.objs -I src/.proc.objs/.private -intf-suffix .ml -no-alias-deps -opaque -open Proc -o src/.proc.objs/proc__Lexer.cmx -c -impl src/lexer.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -I src/.proc.objs -I src/.proc.objs/.private -intf-suffix .ml -no-alias-deps -opaque -open Proc -o src/.proc.objs/proc__Interp1.cmx -c -impl src/interp1.ml)
+> File "src/interp1.ml", line 71, characters 9-11:
+> Warning 27: unused variable e1.
+> File "src/interp1.ml", line 71, characters 13-15:
+> Warning 27: unused variable e2.
+> File "src/interp1.ml", line 72, characters 6-10:
+> Warning 27: unused variable e1.
+> File "src/interp1.ml", line 73, characters 6-10:
+> Warning 27: unused variable e1.
+> File "src/interp1.ml", line 74, characters 10-14:
+> Warning 27: unused variable fs.
+> File "src/interp1.ml", line 75, characters 9-10:
+> Warning 27: unused variable e.
+> File "src/interp1.ml", line 75, characters 11-13:
+> Warning 27: unused variable id.
+> File "src/interp1.ml", line 76, characters 9-13:
+> Warning 27: unused variable e1.
+> File "src/interp1.ml", line 79, characters 9-11:
+> Warning 27: unused variable e1.
+> File "src/interp1.ml", line 79, characters 12-15:
+> Warning 27: unused variable lte.
+> File "src/interp1.ml", line 79, characters 16-19:
+> Warning 27: unused variable rte.
+> File "src/interp1.ml", line 80, characters 10-16:
+> Warning 27: unused variable target.
+> File "src/interp1.ml", line 80, characters 17-26:
+> Warning 27: unused variable emptycase.
+> File "src/interp1.ml", line 80, characters 27-30:
+> Warning 27: unused variable id1.
+> File "src/interp1.ml", line 80, characters 31-34:
+> Warning 27: unused variable id2.
+> File "src/interp1.ml", line 80, characters 35-38:
+> Warning 27: unused variable id3.
+> File "src/interp1.ml", line 80, characters 39-47:
+> Warning 27: unused variable nodecase.
+> File "src/interp1.ml", line 81, characters 9-13:
+> Warning 27: unused variable es.
+> File "src/interp1.ml", line 82, characters 12-15:
+> Warning 27: unused variable ids.
+> File "src/interp1.ml", line 82, characters 16-18:
+> Warning 27: unused variable e1.
+> File "src/interp1.ml", line 82, characters 19-21:
+> Warning 27: unused variable e2.
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -I src/.proc.objs -I src/.proc.objs/.private -intf-suffix .ml -no-alias-deps -opaque -open Proc -o src/.proc.objs/proc__Interp.cmx -c -impl src/interp.ml)
+> File "src/interp.ml", line 71, characters 9-11:
+> Warning 27: unused variable e1.
+> File "src/interp.ml", line 71, characters 13-15:
+> Warning 27: unused variable e2.
+> File "src/interp.ml", line 72, characters 6-10:
+> Warning 27: unused variable e1.
+> File "src/interp.ml", line 73, characters 6-10:
+> Warning 27: unused variable e1.
+> File "src/interp.ml", line 109, characters 9-13:
+> Warning 27: unused variable es.
+> File "src/interp.ml", line 110, characters 12-15:
+> Warning 27: unused variable ids.
+> File "src/interp.ml", line 110, characters 16-18:
+> Warning 27: unused variable e1.
+> File "src/interp.ml", line 110, characters 19-21:
+> Warning 27: unused variable e2.
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I test/.test.eobjs -I /home/krystal/.opam/system/lib/bytes -I /home/krystal/.opam/system/lib/oUnit -I src/.proc.objs -no-alias-deps -opaque -o test/.test.eobjs/test_lib.cmo -c -impl test/test_lib.ml)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I test/.test.eobjs -I /home/krystal/.opam/system/lib/bytes -I /home/krystal/.opam/system/lib/oUnit -I src/.proc.objs -no-alias-deps -opaque -o test/.test.eobjs/test.cmo -c -impl test/test.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -I src/.proc.objs -I src/.proc.objs/.private -intf-suffix .ml -no-alias-deps -opaque -open Proc -o src/.proc.objs/proc__Parser.cmx -c -impl src/parser.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -I test/.test.eobjs -I /home/krystal/.opam/system/lib/bytes -I /home/krystal/.opam/system/lib/oUnit -I src/.proc.objs -intf-suffix .ml -no-alias-deps -opaque -o test/.test.eobjs/test_lib.cmx -c -impl test/test_lib.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -I test/.test.eobjs -I /home/krystal/.opam/system/lib/bytes -I /home/krystal/.opam/system/lib/oUnit -I src/.proc.objs -intf-suffix .ml -no-alias-deps -opaque -o test/.test.eobjs/test.cmx -c -impl test/test.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -a -o src/proc.cmxa src/.proc.objs/proc.cmx src/.proc.objs/proc__Ast.cmx src/.proc.objs/proc__Parser.cmx src/.proc.objs/proc__Lexer.cmx src/.proc.objs/proc__Ds.cmx src/.proc.objs/proc__Interp1.cmx src/.proc.objs/proc__Interp.cmx)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -o test/test.exe -I /home/krystal/.opam/system/lib/bytes -I /home/krystal/.opam/system/lib/oUnit -I src /usr/lib/ocaml/unix.cmxa /home/krystal/.opam/system/lib/oUnit/oUnitAdvanced.cmxa /home/krystal/.opam/system/lib/oUnit/oUnit.cmxa src/proc.cmxa test/.test.eobjs/test_lib.cmx test/.test.eobjs/test.cmx)
+$ (cd _build/default/test && ./test.exe)
+> ........FFFFFFFFF
+> ==============================================================================
+> Error: student test suite:16:null-false.
+>
+> File "/mnt/c/krystal/hw3_stub/_build/default/test/oUnit-student test suite-DESKTOP-MJPTBND#01.log", line 19, characters 1-1:
+> Error: student test suite:16:null-false (in the log).
+>
+> Raised at file "src/oUnitAssert.ml", line 45, characters 2-27
+> Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+>
+> null-false failed, -0 point(s)
+> expected: Ok (BoolVal false) but got: Error (Failure("implement me"))
+> ------------------------------------------------------------------------------
+> ==============================================================================
+> Error: student test suite:15:null-true.
+>
+> File "/mnt/c/krystal/hw3_stub/_build/default/test/oUnit-student test suite-DESKTOP-MJPTBND#02.log", line 24, characters 1-1:
+> Error: student test suite:15:null-true (in the log).
+>
+> Raised at file "src/oUnitAssert.ml", line 45, characters 2-27
+> Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+>
+> null-true failed, -0 point(s)
+> expected: Ok (BoolVal true) but got: Error (Failure("implement me"))
+> ------------------------------------------------------------------------------
+> ==============================================================================
+> Error: student test suite:14:tl-list.
+>
+> File "/mnt/c/krystal/hw3_stub/_build/default/test/oUnit-student test suite-DESKTOP-MJPTBND#03.log", line 16, characters 1-1:
+> Error: student test suite:14:tl-list (in the log).
+>
+> Raised at file "src/oUnitAssert.ml", line 45, characters 2-27
+> Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+>
+> tl-list failed, -0 point(s)
+> expected: Ok (ListVal) but got: Error (Failure("implement me"))
+> ------------------------------------------------------------------------------
+> ==============================================================================
+> Error: student test suite:13:tl-singleton.
+>
+> File "/mnt/c/krystal/hw3_stub/_build/default/test/oUnit-student test suite-DESKTOP-MJPTBND#04.log", line 13, characters 1-1:
+> Error: student test suite:13:tl-singleton (in the log).
+>
+> Raised at file "src/oUnitAssert.ml", line 45, characters 2-27
+> Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+>
+> tl-singleton failed, -0 point(s)
+> expected: Ok (ListVal) but got: Error (Failure("implement me"))
+> ------------------------------------------------------------------------------
+> ==============================================================================
+> Error: student test suite:12:hd-list.
+>
+> File "/mnt/c/krystal/hw3_stub/_build/default/test/oUnit-student test suite-DESKTOP-MJPTBND#02.log", line 16, characters 1-1:
+> Error: student test suite:12:hd-list (in the log).
+>
+> Raised at file "src/oUnitAssert.ml", line 45, characters 2-27
+> Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+>
+> hd-list failed, -0 point(s)
+> expected: Ok (NumVal 3) but got: Error (Failure("implement me"))
+> ------------------------------------------------------------------------------
+> ==============================================================================
+> Error: student test suite:11:hd-singleton.
+>
+> File "/mnt/c/krystal/hw3_stub/_build/default/test/oUnit-student test suite-DESKTOP-MJPTBND#01.log", line 11, characters 1-1:
+> Error: student test suite:11:hd-singleton (in the log).
+>
+> Raised at file "src/oUnitAssert.ml", line 45, characters 2-27
+> Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+>
+> hd-singleton failed, -0 point(s)
+> expected: Ok (NumVal 1) but got: Error (Failure("implement me"))
+> ------------------------------------------------------------------------------
+> ==============================================================================
+> Error: student test suite:10:cons-list.
+>
+> File "/mnt/c/krystal/hw3_stub/_build/default/test/oUnit-student test suite-DESKTOP-MJPTBND#03.log", line 8, characters 1-1:
+> Error: student test suite:10:cons-list (in the log).
+>
+> Raised at file "src/oUnitAssert.ml", line 45, characters 2-27
+> Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+>
+> cons-list failed, -0 point(s)
+> expected: Ok (ListVal) but got: Error (Failure("implement me"))
+> ------------------------------------------------------------------------------
+> ==============================================================================
+> Error: student test suite:9:cons-singleton.
+>
+> File "/mnt/c/krystal/hw3_stub/_build/default/test/oUnit-student test suite-DESKTOP-MJPTBND#04.log", line 5, characters 1-1:
+> Error: student test suite:9:cons-singleton (in the log).
+>
+> Raised at file "src/oUnitAssert.ml", line 45, characters 2-27
+> Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+>
+> cons-singleton failed, -0 point(s)
+> expected: Ok (ListVal) but got: Error (Failure("implement me"))
+> ------------------------------------------------------------------------------
+> ==============================================================================
+> Error: student test suite:8:emptylist.
+>
+> File "/mnt/c/krystal/hw3_stub/_build/default/test/oUnit-student test suite-DESKTOP-MJPTBND#02.log", line 8, characters 1-1:
+> Error: student test suite:8:emptylist (in the log).
+>
+> Raised at file "src/oUnitAssert.ml", line 45, characters 2-27
+> Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+>
+> emptylist failed, -0 point(s)
+> expected: Ok (ListVal) but got: Error (Failure("implement me"))
+> ------------------------------------------------------------------------------
+> Ran: 17 tests in: 0.19 seconds.
+> FAILED: Cases: 17 Tried: 17 Errors: 0 Failures: 9 Skip:  0 Todo: 0 Timeouts: 0.
+[1]

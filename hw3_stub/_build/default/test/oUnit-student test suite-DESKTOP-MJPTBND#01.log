@@ -1,0 +1,25 @@
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#01 I: Start test student test suite:0:positive-const.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#01 I: Test student test suite:0:positive-const is successful.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#01 I: End test student test suite:0:positive-const.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#01 I: Start test student test suite:4:proc-1.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#01 I: Test student test suite:4:proc-1 is successful.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#01 I: End test student test suite:4:proc-1.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#01 I: Start test student test suite:7:abs-neg.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#01 I: Test student test suite:7:abs-neg is successful.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#01 I: End test student test suite:7:abs-neg.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#01 I: Start test student test suite:11:hd-singleton.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#01 E: Test student test suite:11:hd-singleton has failed.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#01 E: hd-singleton failed, -0 point(s)
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#01 E: expected: Ok (NumVal 1) but got: Error (Failure("implement me")) in test student test suite:11:hd-singleton.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#01 E: Raised at file "src/oUnitAssert.ml", line 45, characters 2-27
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#01 E: Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#01 E: 
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#01 I: End test student test suite:11:hd-singleton.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#01 I: Start test student test suite:16:null-false.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#01 E: Test student test suite:16:null-false has failed.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#01 E: null-false failed, -0 point(s)
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#01 E: expected: Ok (BoolVal false) but got: Error (Failure("implement me")) in test student test suite:16:null-false.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#01 E: Raised at file "src/oUnitAssert.ml", line 45, characters 2-27
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#01 E: Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#01 E: 
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#01 I: End test student test suite:16:null-false.

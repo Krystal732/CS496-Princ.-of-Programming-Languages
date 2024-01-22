@@ -1,0 +1,21 @@
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#01 I: Start test suite:0:newref1.
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#01 I: Test suite:0:newref1 is successful.
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#01 I: End test suite:0:newref1.
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#01 I: Start test suite:4:deref2.
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#01 I: Test suite:4:deref2 is successful.
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#01 I: End test suite:4:deref2.
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#01 I: Start test suite:6:pair2 .
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#01 I: Test suite:6:pair2  is successful.
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#01 I: End test suite:6:pair2 .
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#01 I: Start test suite:11:pair_bool_int .
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#01 I: Test suite:11:pair_bool_int  is successful.
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#01 I: End test suite:11:pair_bool_int .
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#01 I: Start test suite:14:single_ele_bool .
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#01 I: Test suite:14:single_ele_bool  is successful.
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#01 I: End test suite:14:single_ele_bool .
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#01 I: Start test suite:19:empty_tree .
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#01 I: Test suite:19:empty_tree  is successful.
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#01 I: End test suite:19:empty_tree .
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#01 I: Start test suite:22:get_data_tree .
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#01 I: Test suite:22:get_data_tree  is successful.
+2022-04-26T18:31:44+00:00 DESKTOP-MJPTBND#01 I: End test suite:22:get_data_tree .

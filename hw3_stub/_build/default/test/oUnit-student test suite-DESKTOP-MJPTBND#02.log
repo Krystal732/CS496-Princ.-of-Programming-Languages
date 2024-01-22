@@ -1,0 +1,30 @@
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 I: Start test student test suite:1:negative-const.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 I: Test student test suite:1:negative-const is successful.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 I: End test student test suite:1:negative-const.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 I: Start test student test suite:5:abs-0.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 I: Test student test suite:5:abs-0 is successful.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 I: End test student test suite:5:abs-0.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 I: Start test student test suite:8:emptylist.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 E: Test student test suite:8:emptylist has failed.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 E: emptylist failed, -0 point(s)
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 E: expected: Ok (ListVal) but got: Error (Failure("implement me")) in test student test suite:8:emptylist.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 E: Raised at file "src/oUnitAssert.ml", line 45, characters 2-27
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 E: Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 E: 
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 I: End test student test suite:8:emptylist.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 I: Start test student test suite:12:hd-list.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 E: Test student test suite:12:hd-list has failed.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 E: hd-list failed, -0 point(s)
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 E: expected: Ok (NumVal 3) but got: Error (Failure("implement me")) in test student test suite:12:hd-list.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 E: Raised at file "src/oUnitAssert.ml", line 45, characters 2-27
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 E: Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 E: 
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 I: End test student test suite:12:hd-list.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 I: Start test student test suite:15:null-true.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 E: Test student test suite:15:null-true has failed.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 E: null-true failed, -0 point(s)
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 E: expected: Ok (BoolVal true) but got: Error (Failure("implement me")) in test student test suite:15:null-true.
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 E: Raised at file "src/oUnitAssert.ml", line 45, characters 2-27
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 E: Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 E: 
+2022-03-12T17:06:12+00:00 DESKTOP-MJPTBND#02 I: End test student test suite:15:null-true.
